@@ -46,3 +46,48 @@ console.log(newArray);
 
 let fun1 = () => {};
 fun1 = () => {};
+
+const obj = {
+  name: 'mohammed',
+};
+
+obj.age = 10;
+obj.fun = () => {
+  console.log('mohammed');
+};
+
+obj.fun();
+obj.arr = [1, 3, 4, 5];
+obj.newObj = {};
+obj.obj = {
+  sex: 'male',
+};
+
+obj.obj1 = {
+  x: 'mpoa',
+};
+
+obj.age = 12;
+
+console.log(obj);
+
+console.log(obj.name);
+
+for (let x in obj) {
+  console.log(x, obj[x]);
+}
+
+const obj2 = {
+  fun1: () => {
+    console.log(10);
+  },
+  fun2: () => {
+    console.log(20);
+  },
+};
+
+console.log(obj2.fun1());
+
+for (let fun in obj2) {
+  console.log(obj2[fun]());
+}
