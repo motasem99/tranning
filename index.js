@@ -91,3 +91,32 @@ console.log(obj2.fun1());
 for (let fun in obj2) {
   console.log(obj2[fun]());
 }
+
+/**
+ *
+ * create object content keys [ name, age, function , array] => object5
+ * print all keys
+ * print all values for each keys
+ */
+
+const obj5 = {
+  name: 'mutasem',
+  age: 21,
+  function: () => {
+    console.log('tis is function');
+  },
+  array: [1, 3, 3],
+};
+for (let x in obj5) {
+  console.log(x, obj5[x]);
+}
+
+const obj5keys = Object.keys(obj5);
+console.log(obj5keys);
+
+const obj5Values = Object.values(obj5);
+console.log(obj5Values);
+
+for (let i of obj5keys) {
+  console.log(obj5[i]);
+}
