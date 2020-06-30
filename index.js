@@ -120,3 +120,34 @@ console.log(obj5Values);
 for (let i of obj5keys) {
   console.log(obj5[i]);
 }
+
+/**
+ * create new object, get all keys to this object in array
+ * add new item to array
+ * check if key has value in object print his value else print no value to this key
+ */
+
+const obj6 = {
+  name: 'mutasem',
+  age: 21,
+  function: () => {
+    console.log('tis is function');
+  },
+  array: [1, 3, 3],
+};
+
+const objK = Object.keys(obj6);
+console.log(objK);
+objK.push('mohammed');
+console.log(objK);
+
+const checkFun = (object, array) => {
+  for (let i in object) {
+    for (let t of array) {
+      if (i == t) {
+        console.log('found');
+      }
+    }
+  }
+};
+checkFun(obj6, objK);
