@@ -13,7 +13,6 @@
  * length get length of array
  * indexOf get index from array
  */
-
 const array = [1, 2, 3, 4];
 
 console.log(array.indexOf(5));
